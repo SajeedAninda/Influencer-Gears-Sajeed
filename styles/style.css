@@ -115,10 +115,12 @@ header {
     height: 275px;
     transform: translate(0px, 35px);
 }
-.banner-images img:hover{
+
+.banner-images img:hover {
     transform: scale(1.25);
     transition: 0.2s;
 }
+
 .banner-sponsors {
     width: 85%;
     margin: 0px auto;
@@ -152,21 +154,25 @@ header {
     color: #3A3A3A;
     margin-bottom: 50px;
 }
-.box-container{
+
+.box-container {
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
 .box {
     padding: 15px;
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
-.box:hover{
+
+.box:hover {
     background-color: rgba(209, 208, 208, 0.678);
     transition: 0.2s;
 }
+
 .box h3 {
     font-size: 1.3rem;
     color: #18191F;
@@ -180,7 +186,8 @@ header {
     font-weight: 500;
     padding: 0px 0px 10px 0px;
 }
-.box p{
+
+.box p {
     font-size: 0.8rem;
     color: #787885;
 }
@@ -188,11 +195,52 @@ header {
 .box img {
     width: 100%;
 }
-.see{
+
+.see {
     text-align: right;
     color: #72A305;
     padding-top: 30px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* FEATURED SECTION  */
+.featured-section{
+    padding: 0px 180px 80px 180px;
+    display: flex;
+    gap: 70px;
+}
+.featured-image{
+    width: 40%;
+}
+.featured-image img{
+    width: 100%;
+}
+.featured-description{
+    width: 60%;
+    margin-top: 20px;
+}
+.featured-description h2{
+    font-size: 2rem;
+    color: #546e1c;
+    margin-bottom: 20px;
+}
+.featured-description p{
+    font-size: 1rem;
+    color: #6C6C6C;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.featured-description button {
+    padding: 12px 25px;
+    background-color: #72A305;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.featured-description button:hover {
+    background-color: #546e1c;
+    transition: 0.2s;
 }
