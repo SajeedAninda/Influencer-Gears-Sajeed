@@ -254,9 +254,10 @@ header {
     background-color: #546e1c;
     transition: 0.2s;
 }
+
 /* STYLES FOR FOOTER SECTION  */
-footer{
-    height: 35vh;
+footer {
+    padding: 70px 0px;
     background-color: #72A305;
     display: flex;
     flex-direction: column;
@@ -266,7 +267,8 @@ footer{
     text-align: center;
     color: #18191F;
 }
-.footer-icons i{
+
+.footer-icons i {
     font-size: 1.2rem;
     width: 35px;
     height: 35px;
@@ -276,7 +278,125 @@ footer{
     border-radius: 50%;
     cursor: pointer;
 }
-.footer-icons i:hover{
+
+.footer-icons i:hover {
     color: white;
     transition: 0.2s;
+}
+
+/* MEDIA QUERIES  */
+/* FOR SMALL DEVICES  */
+@media screen and (max-width:576px) {
+    header {
+        padding: 10px;
+    }
+
+    .header-container nav {
+        flex-direction: column;
+        margin-top: 10px;
+        /* height: 7vh; */
+    }
+
+    .nav-logo h3 {
+        font-size: 1.2rem;
+    }
+
+    .banner-container {
+        /* height: 45vh; */
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .banner-description {
+        text-align: center;
+    }
+
+    .banner-description h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-description p {
+        font-size: 0.8rem;
+    }
+
+    .banner-images {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .banner-images img {
+        width: 180px;
+        height: 160px;
+    }
+
+    .banner-sponsors {
+        margin-top: 15px;
+    }
+
+    .banner-sponsors .sponsor-containers {
+        flex-wrap: wrap;
+    }
+
+    .banner-sponsors .sponsor-containers img {
+        width: 65px;
+    }
+
+    .popular-collection-section {
+        padding: 10px;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .featured-section {
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+
+    .featured-image {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .featured-description {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+/* FOR LARGE DEVICES  */
+@media screen and (min-width:576px) and (max-width:992px){
+    header {
+        padding: 20px 40px;
+    }
+    .banner-description h1{
+        font-size: 1.5rem;
+    }
+    .banner-images{
+        width: 230px;
+        height: 230px;
+        margin-top: 10px;
+    }
+    .banner-images img {
+        width: 200px;
+        height: 175px;
+    }    
+    .popular-collection-section {
+        padding: 20px;
+    }
+    .featured-section {
+        padding: 20px;
+    }
+    .featured-image {
+        width: 50%;
+    }
+    .featured-description{   
+        width: 50%;
+        margin-top: 0;
+    }
 }
